@@ -6,7 +6,7 @@
 
 ![](https://github.com/lay-john/FLARE24-Task2/blob/master/IMG/model.png)
 
-![](https://github.com/lay-john/FLARE24-Task2/blob/master/IMG/liver-based Z-axis RoI.png)
+![](https://github.com/lay-john/FLARE24-Task2/blob/master/IMG/liver-based-Z-axis-RoI.png)
 
 
 
