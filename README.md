@@ -64,7 +64,7 @@ where the __nnunet_preprocessing_folder__ is the folder path of the dataset plan
 python nnunet/run/run_training.py 3d_fullres nnUNetTrainerV2 fold --npz
 ```
 
-Before Train the student model, you should move the best teacher nnunet checkpoints to replace the three files in folder __'checkpoint_teacher'__.
+Before Train the student model, you should move the best teacher nnunet checkpoints to replace the three files in folder [checkpoint_teacher](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoint_teacher)
 
 ### Train the student model.
 
@@ -84,7 +84,7 @@ You can run the nnunetv1 .model to .onnx.py to get onnx model. The [SAVE_PATH] S
 python nnunetv1 .model to .onnx.py [SAVE_PATH]
 ```
 
-Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder __'checkpoints'__.
+Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
 
 
 
@@ -101,7 +101,7 @@ You also can run the inference.py to inference.
 ```
 python inference.py [INPUT_FOLDER] [OUTPUT_FOLDER]
 ```
-Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder __'checkpoints'__.
+Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
 
 
 
