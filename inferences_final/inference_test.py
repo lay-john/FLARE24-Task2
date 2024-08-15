@@ -430,9 +430,9 @@ class MuiltThreadDataGenerator(object):
 
 
 def preprocess(nii_path):
-    #identity = nii_path.split('/')[-1].split('_0000.nii.gz')[0]  # pre
-    ss = nii_path.replace('\\', '/')
-    identity = ss.split('/')[-1].split('_0000.nii.gz')[0]
+    identity = nii_path.split('/')[-1].split('_0000.nii.gz')[0]  # pre
+    #ss = nii_path.replace('\\', '/')
+    #identity = ss.split('/')[-1].split('_0000.nii.gz')[0]
     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     ################################
     import psutil
