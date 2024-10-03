@@ -76,7 +76,7 @@ Before Train the student model, you should move the best teacher nnunet checkpoi
 python nnunet/run/run_training.py 3d_fullres nnUNetTrainerV2_PPPP fold --npz
 ```
 
-
+## Trained Models
 
 ## Inference
 
