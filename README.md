@@ -1,5 +1,6 @@
-#  Solution of Team lyy1 for FLARE24 Task 2 Challenge
-
+# Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU
+#  This repository is the official implementation of .[Locate, Crop and Segment: Efficient abdominal
+CT image segmentation on CPU](https://openreview.net/forum?id=KiRQT0mBXm&noteId=KiRQT0mBXm)
 ## Introduction
 
 ### Overview of our work.
@@ -21,6 +22,8 @@ pip install torch torchvision torchaudio
 pip install -e .
 ```
 
+##Dataset
+You can get the dataset from MICCAI FLARE2024.
 ## Prepocessing
 
 ### convert CT images to npy
@@ -55,6 +58,8 @@ After preprocessing, we will obtain several folders:
 python data_convert.py -nnunet_preprocessing_folder -imagesTr_floder -labelTr_floder
 ```
 where the __nnunet_preprocessing_folder__ is the folder path of the dataset planed by nnunet. like 'nnU-Net_base_folder/nnUNet_preprocessed/Task0160_FLARE2024T2/nnUNetData_plans_v2.1_stage1'
+
+
 
 ## Training
 
@@ -106,9 +111,11 @@ Before the Inference, you should move the best student nnunet checkpoints to rep
 
 
 ## Evaluation
-
+You can run T2andT3_FLARE24_DSC_NSD_Eval.py in .[](https://github.com/JunMa11/FLARE/tree/main/FLARE24) to get the results reported in the paper
 ## Results
+You can get our performance in MICCAI FLARE2024 Task2 on the team named lyy1 in .[](https://www.codabench.org/competitions/2320/#/pages-tab)
 
+## Contributing
 
 ## Acknowledgement
 
