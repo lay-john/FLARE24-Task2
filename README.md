@@ -1,5 +1,5 @@
 ## Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU
-##  This repository is the official implementation of .[Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU](https://openreview.net/forum?id=KiRQT0mBXm&noteId=KiRQT0mBXm)
+##  This repository is the official implementation of [Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU](https://openreview.net/forum?id=KiRQT0mBXm&noteId=KiRQT0mBXm)
 ## Introduction
 
 ### Overview of our work.
@@ -110,9 +110,9 @@ Before the Inference, you should move the best student nnunet checkpoints to rep
 
 
 ## Evaluation
-You can run T2andT3_FLARE24_DSC_NSD_Eval.py in .[the evalution code](https://github.com/JunMa11/FLARE/tree/main/FLARE24) to get the results reported in the paper
+You can run T2andT3_FLARE24_DSC_NSD_Eval.py in [the evalution code](https://github.com/JunMa11/FLARE/tree/main/FLARE24) to get the results reported in the paper
 ## Results
-You can get our performance in MICCAI FLARE2024 Task2 on the team named lyy1 in .[result](https://www.codabench.org/competitions/2320/#/pages-tab)
+You can get our performance in MICCAI FLARE2024 Task2 on the team named lyy1 in [result](https://www.codabench.org/competitions/2320/#/pages-tab)
 
 ## Contributing
 
