@@ -89,7 +89,7 @@ python nnunetv1 .model to .onnx.py [SAVE_PATH]
 ```
 
 Before conversion, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
-You can to here to get [our onnx model](https://github.com/lay-john/FLARE24-Task2/tree/master/onnx).
+You can to here to get [our onnx model](https://pan.baidu.com/s/1Mgu62bh-ZdaXWeNdaSkqug?pwd=8888).
 
 
 Then, you can inference
@@ -97,15 +97,6 @@ Then, you can inference
 ```
 python inference_test.py [INPUT_FOLDER] [OUTPUT_FOLDER] [SAVE_PATH]
 ```
-
-
-
-You also can run the inference.py to inference, but in this part, But here we are using GPU inference without any speed optimization.
-
-```
-python inference.py [INPUT_FOLDER] [OUTPUT_FOLDER]
-```
-Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
 
 
 
