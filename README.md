@@ -1,5 +1,5 @@
-## Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU
-##  This repository is the official implementation of [Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU](https://openreview.net/forum?id=KiRQT0mBXm&noteId=KiRQT0mBXm)
+## FLARE24 Solution
+##  This repository is the official implementation of [Locate, Crop and Segment: Efficient abdominal CT image segmentation on CPU](https://openreview.net/forum?id=KiRQT0mBXm&noteId=KiRQT0mBXm) of Team lyy1 on FLARE24 challenge.
 ## Introduction
 
 ### Overview of our work.
@@ -22,7 +22,7 @@ pip install -e .
 ```
 
 ##Dataset
-You can get the dataset from MICCAI FLARE2024.
+You can get the dataset from [MICCAI FLARE2024](https://www.codabench.org/competitions/2320/#/pages-tab).
 ## Prepocessing
 
 ### convert CT images to npy
@@ -77,19 +77,19 @@ python nnunet/run/run_training.py 3d_fullres nnUNetTrainerV2_PPPP fold --npz
 ```
 
 ## Trained Models
-
+You can get our model from the [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints)
 ## Inference
 
 We convert the pretrained model into onnx format for saving time. 
 
-You can run the nnunetv1 .model to .onnx.py to get onnx model. The [SAVE_PATH] Should be suffixed with .onnx flavor.
+You can run the [nnunetv1 .model to .onnx.py](https://github.com/lay-john/FLARE24-Task2/blob/master/nnunetv1%20.model%20to%20.onnx.py) to get onnx model. The [SAVE_PATH] Should be suffixed with .onnx flavor.
 
 ```
 python nnunetv1 .model to .onnx.py [SAVE_PATH]
 ```
 
-Before the Inference, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
-
+Before conversion, you should move the best student nnunet checkpoints to replace the three files in folder [checkpoints](https://github.com/lay-john/FLARE24-Task2/tree/master/checkpoints).
+You can to here to get [our onnx model](https://github.com/lay-john/FLARE24-Task2/tree/master/onnx).
 
 
 Then, you can inference
@@ -100,7 +100,7 @@ python inference_test.py [INPUT_FOLDER] [OUTPUT_FOLDER] [SAVE_PATH]
 
 
 
-You also can run the inference.py to inference.
+You also can run the inference.py to inference, but in this part, But here we are using GPU inference without any speed optimization.
 
 ```
 python inference.py [INPUT_FOLDER] [OUTPUT_FOLDER]
@@ -115,13 +115,13 @@ You can run T2andT3_FLARE24_DSC_NSD_Eval.py in [the evalution code](https://gith
 You can get our performance in MICCAI FLARE2024 Task2 on the team named lyy1 in [result](https://www.codabench.org/competitions/2320/#/pages-tab)
 
 ## Contributing
-
+This project is licensed under the [Apache License 2.0](https://github.com/lay-john/FLARE24-Task2/tree/master/LICENSE), and please adhere to the licenses of the models and datasets used.
 ## Acknowledgement
 
-MACCAI FLARE2024 Task 2 https://www.codabench.org/competitions/2320/
+We thank the contributors of [FLARE24 datasets](https://www.codabench.org/competitions/2320/).
 
 
-## What's New?
+
 
 
 
