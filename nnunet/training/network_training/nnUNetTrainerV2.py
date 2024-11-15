@@ -318,14 +318,14 @@ class nnUNetTrainerV2(nnUNetTrainer):
                     '''
                     if (number[b].startswith("FLARE22")):
                         weight[l, b] = weight_k
-                        #weight_1[l, b] = weight_s
-                        weight_1[l, b] = weight_k
+                        weight_1[l, b] = weight_s
+                        #weight_1[l, b] = weight_k
                         
                     else:
-                        #weight[l, b] = weight_d
-                        weight[l, b] = weight_k
-                        weight_1[l, b] = weight_k
-                        #weight_1[l, b] = weight_s
+                        weight[l, b] = weight_d
+                        #weight[l, b] = weight_k
+                        #weight_1[l, b] = weight_k
+                        weight_1[l, b] = weight_s
                     #weight[l, b] =  weight_k   
                         #p = torch.tensor([1, pos_weight])
                         #p = p / p.sum()
